@@ -76,16 +76,7 @@ const pageLoadHandler = () => {
 }
 pageLoadHandler()
 
-// const stickyNavbar = () => {
-//     let header = document.querySelector('header')
-//
-//     if ( window.scrollY > 300) {
-//         header.classList.add("stickies")
-//     } else {
-//         header.classList.remove("stickies");
-//     }
-//
-// }
-// stickyNavbar()
 
 AOS.init();
+
+

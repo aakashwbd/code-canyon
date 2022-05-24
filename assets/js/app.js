@@ -799,7 +799,7 @@ var THEMEIM = THEMEIM || {};
     init: function() {
       // THEMEIM.initialize.init();
 
-      // $('#preloader').delay(2000).fadeOut(1000);
+      $('#preloader').delay(2000).fadeOut(1000);
     },
   };
 

@@ -76,7 +76,7 @@
                 <div class="header-magic-line-inner clearfix">
                     <div id="site-logo" class="float-left">
                         <a href="index.html" class="logo-main">
-                            <img src="assets/img/logo_5.png" alt="logo">
+                            <img class="nav-logo" src="media/logo.png" alt="logo">
                         </a>
 
                         <a href="index.html" class="logo-stickky">
@@ -417,6 +417,35 @@
     </section>
     <!-- /#page-header -->
 
+<!--    <section>-->
+<!--        <div class="tim-container py-2">-->
+<!--            <div class="music-player player-1">-->
+<!--                <div class="player-controls">-->
+<!--                    <button class="play-button">-->
+<!--                        <i class="fa fa-play"></i>-->
+<!--                    </button>-->
+<!--                </div>-->
+
+<!--                <div class="now-playing">-->
+<!--                    <h3 class="track-name">Take me to you heart</h3>-->
+<!--                    <span class="artist-name">Shane</span>-->
+<!--                    <span class="artist-role">Vocalist</span>-->
+<!--                </div>-->
+
+<!--                <div class="slider_container">-->
+<!--                    <div class="current-time">00:00</div>-->
+<!--                    <input type="range" min="1" max="100" value="0" class="seek_slider" >-->
+<!--                    <div class="total-duration">00:00</div>-->
+<!--                </div>-->
+
+<!--                <div class="slider_container">-->
+<!--                    <i class="fa fa-volume-down"></i>-->
+<!--                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">-->
+<!--                    <i class="fa fa-volume-up"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <section class="header_player style-fullwidth bg-white">
         <!-- Audio Player -->
@@ -433,9 +462,7 @@
                         <!-- Display the track inside player -->
 
                         <div class="current-tracks">
-                            <div id="main_player" class="jp-jplayer">
-
-                            </div>
+                            <div id="main_player" class="jp-jplayer"></div>
                             <div id="nowPlaying">
                                 <h3 class="track-name"></h3>
                                 <span class="artist-name"></span>
@@ -492,10 +519,10 @@
                         alteration in some injected humour.</p>
                 </div>
             </div>
-            <div data-aos="fade-up" class="swiper-container row"
-                 data-swiper-config='{ "loop": true, "prevButton":".swiper-button-prev", "nextButton": ".swiper-button-next", "speed": 700, "autoplay": "5000", "slidesPerView": 6, "spaceBetween": 0, "grabCursor": true,"breakpoints": { "1300": { "slidesPerView": 4 }, "767": { "slidesPerView": 3 }, "500": { "slidesPerView": 1 }}}'>
+            <div class="swiper-container row"
+                 data-swiper-config='{ "loop": true, "dots": true, "prevButton":".swiper-button-prev", "nextButton": ".swiper-button-next", "speed": 700, "autoplay": "5000", "slidesPerView": 6, "spaceBetween": 20, "grabCursor": true,"breakpoints": { "1300": { "slidesPerView": 4 }, "767": { "slidesPerView": 3 }, "500": { "slidesPerView": 1 }}}'>
                 <ul class="artist-line-wrapper swiper-wrapper">
-                    <li class="artist-single clearfix swiper-slide">
+                    <li class="artist-single clearfix swiper-slide" data-aos="fade-up" data-aos-duration="100">
                         <img src="media/artist/guiterist.jpg" alt="">
                         <div class="artist-single-content">
                             <ul>
@@ -520,7 +547,7 @@
                         </div>
                     </li>
 
-                    <li class="artist-single clearfix swiper-slide">
+                    <li class="artist-single clearfix swiper-slide" data-aos="fade-up" data-aos-duration="300">
                         <img src="media/artist/guiterist2.jpg" alt="">
                         <div class="artist-single-content">
                             <ul>
@@ -545,7 +572,7 @@
                         </div>
                     </li>
 
-                    <li class="artist-single clearfix swiper-slide">
+                    <li class="artist-single clearfix swiper-slide" data-aos="fade-up" data-aos-duration="500">
                         <img src="media/artist/guiterist.jpg" alt="">
                         <div class="artist-single-content">
                             <ul>
@@ -570,7 +597,7 @@
                         </div>
                     </li>
 
-                    <li class="artist-single clearfix swiper-slide">
+                    <li class="artist-single clearfix swiper-slide" data-aos="fade-up" data-aos-duration="700">
                         <img src="media/artist/guiterist2.jpg" alt="">
                         <div class="artist-single-content">
                             <ul>
@@ -597,6 +624,8 @@
                 </ul>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <!-- /.tim-container -->
@@ -879,21 +908,22 @@
                     <div class="show-archive-wrapper row no-gutters" data-aos="flip-left">
                         <div class="offset-xs-0 offset-sm-4 col-sm-4 col-6">
                             <div class="single-show-archive">
-                                <img src="media/album/18.jpg" alt="">
+<!--                                <img src="media/album/18.jpg" alt="">-->
+                                <img src="https://w0.peakpx.com/wallpaper/786/351/HD-wallpaper-music-concert-passionate-live-party.jpg" alt="">
                                 <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="col-6 col-sm-4">
                             <div class="single-show-archive">
-                                <img src="media/album/19.jpg" alt="">
+                                <img src="https://w0.peakpx.com/wallpaper/786/351/HD-wallpaper-music-concert-passionate-live-party.jpg" alt="">
                                 <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-8">
                             <div class="single-show-archive video-archive">
-                                <img src="media/album/20.jpg" alt="">
+                                <img src="https://images.unsplash.com/photo-1459163418568-d166586364de?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171" alt="">
                                 <div class="video-player">
                                     <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4"
                                        class="video-btn-three popup-video-btn">
@@ -912,7 +942,7 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="single-show-archive">
-                                <img src="media/album/21.jpg" alt="">
+                                <img src="https://images.unsplash.com/photo-1533219057257-4bb9ed5d2cc6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687" alt="">
                                 <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -938,7 +968,7 @@
                         <h2>UPCOMING SHOWS</h2>
                     </div>
 
-                    <div class="ticket">
+                    <div data-aos="zoom-in-up" class="ticket">
                         <div class="left">
                             <div class="image">
                                 <p class="admit-one">
@@ -988,7 +1018,7 @@
                         </div>
                     </div>
 
-                    <div class="ticket">
+                    <div data-aos="zoom-in-up" class="ticket">
                         <div class="left">
                             <div class="image">
                                 <p class="admit-one">
@@ -1038,111 +1068,6 @@
                         </div>
                     </div>
 
-
-                    <!--                    <div class="single-show-ticket row no-guters">-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-3">-->
-                    <!--                            <div class="date-time">-->
-                    <!--                                <h6>15</h6>-->
-                    <!--                                <p>December, 2018</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-6 col-md-6 col-lg-7">-->
-                    <!--                            <h5>Dream Theatre (Live in London)</h5>-->
-                    <!--                            <p>23 Lee Rd, Blackheath, London SE3 9RQ, UK</p>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-2">-->
-                    <!--                            <div class="a_hover">-->
-                    <!--                                <a href="#">TICKETS</a>-->
-                    <!--                                <img class="svg" src="media/background/round_black.svg" alt="">-->
-                    <!--                                <img class="svg" src="media/background/round.svg" alt="">-->
-                    <!--                                <i class="fa fa-play" aria-hidden="true"></i>-->
-
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="single-show-ticket row no-guters">-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-3">-->
-                    <!--                            <div class="date-time">-->
-                    <!--                                <h6>15</h6>-->
-                    <!--                                <p>January, 2018</p>-->
-                    <!--                            </div>-->
-
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-6 col-md-6 col-lg-7">-->
-                    <!--                            <h5>Maroon 5 - NEWBO EVOLVE FESTIVAL</h5>-->
-                    <!--                            <p>CEDAR RAPIDS, IA</p>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-2">-->
-                    <!--                            <div class="a_hover">-->
-                    <!--                                <a href="#">TICKETS</a>-->
-                    <!--                                <img class="svg" src="media/background/round_black.svg" alt="">-->
-                    <!--                                <img class="svg" src="media/background/round.svg" alt="">-->
-                    <!--                                <i class="fa fa-play" aria-hidden="true"></i>-->
-
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="single-show-ticket row no-guters">-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-3">-->
-                    <!--                            <div class="date-time">-->
-                    <!--                                <h6>11</h6>-->
-                    <!--                                <p>July, 2018</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-6 col-md-6 col-lg-7">-->
-                    <!--                            <h5>Red Hot Chilli Peppers</h5>-->
-                    <!--                            <p>PARQUE FUNDIDORA, MONTERRY, MEXICO</p>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-2">-->
-                    <!--                            <div class="a_hover">-->
-                    <!--                                <a href="#">RSVP</a>-->
-                    <!--                                <img class="svg" src="media/background/round_black.svg" alt="">-->
-                    <!--                                <img class="svg" src="media/background/round.svg" alt="">-->
-                    <!--                                <i class="fa fa-play" aria-hidden="true"></i>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="single-show-ticket row no-guters">-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-3">-->
-                    <!--                            <div class="date-time">-->
-                    <!--                                <h6>10</h6>-->
-                    <!--                                <p>January, 2018</p>-->
-                    <!--                            </div>-->
-
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-6 col-md-6 col-lg-7">-->
-                    <!--                            <h5>SYMPHONY X</h5>-->
-                    <!--                            <p>UNITED CENTER, CHICAGO, IL</p>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-2">-->
-                    <!--                            <div class="a_hover">-->
-                    <!--                                <a href="#">TICKETS</a>-->
-                    <!--                                <img class="svg" src="media/background/round_black.svg" alt="">-->
-                    <!--                                <img class="svg" src="media/background/round.svg" alt="">-->
-                    <!--                                <i class="fa fa-play" aria-hidden="true"></i>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="single-show-ticket row no-guters">-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-3">-->
-                    <!--                            <div class="date-time">-->
-                    <!--                                <h6>27</h6>-->
-                    <!--                                <p>November, 2018</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-6 col-md-6 col-lg-7">-->
-                    <!--                            <h5>NIRVANA</h5>-->
-                    <!--                            <p>BRIDGESTONE ARENA, NASHVILLE, TN</p>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-sm-3 col-md-3 col-lg-2">-->
-                    <!--                            <div class="a_hover">-->
-                    <!--                                <a href="#">TICKETS</a>-->
-                    <!--                                <img class="svg" src="media/background/round_black.svg" alt="">-->
-                    <!--                                <img class="svg" src="media/background/round.svg" alt="">-->
-                    <!--                                <i class="fa fa-play" aria-hidden="true"></i>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
                 </div>
             </div>
             <!-- /.latest-album-info -->
@@ -1165,7 +1090,7 @@
                     </div>
                     <div class="row">
                         <div class="grid-60">
-                            <div class="spotlight-inner">
+                            <div class="spotlight-inner" data-aos="fade-right">
                                 <img src="media/performance/vid-1.jpg" alt="">
                                 <div class="video-player-three">
                                     <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4"
@@ -1184,7 +1109,7 @@
                         </div>
                         <!-- /.col-xl-8 -->
                         <div class="grid-40">
-                            <div class="subscribe-two">
+                            <div class="subscribe-two" data-aos="fade-left">
                                 <div class="section-title style-five">
                                     <h2>SUBSCRIBE</h2>
                                     <p>There are many variations of passages of Lorem Ipsum available but the
@@ -1296,7 +1221,7 @@
                         </div>
                         <div class=" col-md-7">
                             <div class="partner-swipper swiper-container row"
-                                 data-swiper-config='{ "loop": true, "prevButton":".swiper-button-prev", "nextButton": ".swiper-button-next", "speed": 700, "autoplay": false, "slidesPerView": 4, "spaceBetween": 0, "grabCursor": true,"breakpoints": { "991": { "slidesPerView": 2 }, "767": { "slidesPerView": 3 }, "500": { "slidesPerView": 2 }}}'>
+                                 data-swiper-config='{ "loop": true, "prevButton":".swiper-button-prev", "nextButton": ".swiper-button-next", "speed": 700, "autoplay": "3000", "slidesPerView": 4, "spaceBetween": 0, "grabCursor": true,"breakpoints": { "991": { "slidesPerView": 2 }, "767": { "slidesPerView": 3 }, "500": { "slidesPerView": 2 }}}'>
                                 <ul class="artist-line-wrapper swiper-wrapper">
                                     <li class="clearfix swiper-slide">
                                         <a href="#"><img src="media/logo/21.png" alt=""></a>
@@ -1351,44 +1276,45 @@
                             <h2>FROM THE FEED</h2>
                         </div>
                         <ul>
-                            <li>
+                            <li data-aos="fade-right" data-aos-duration="100">
                                 <a href="#">
-                                    <img src="../../media/instagram/f1.jpg" alt="">
+                                    <img class="feed-img" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="">
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-right" data-aos-duration="300">
                                 <a href="#">
-                                    <img src="../../media/instagram/f2.jpg" alt="">
+                                    <img class="feed-img" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="">
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-right" data-aos-duration="500">
                                 <a href="#">
-                                    <img src="../../media/instagram/f3.jpg" alt="">
+                                    <img class="feed-img" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="">
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-right" data-aos-duration="700">
                                 <a href="#">
-                                    <img src="../../media/instagram/f4.jpg" alt="">
+                                    <img class="feed-img" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="">
                                 </a>
                             </li>
-                            <li>
+
+                            <li data-aos="fade-right" data-aos-duration="900">
                                 <a href="#">
-                                    <img src="../../media/instagram/f5.jpg" alt="">
+                                    <img class="feed-img" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="">
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-right" data-aos-duration="1100">
                                 <a href="#">
-                                    <img src="../../media/instagram/f6.jpg" alt="">
+                                    <img class="feed-img" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="">
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-right" data-aos-duration="1300">
                                 <a href="#">
-                                    <img src="../../media/instagram/f7.jpg" alt="">
+                                    <img class="feed-img" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="">
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-right" data-aos-duration="1500">
                                 <a href="#">
-                                    <img src="../../media/instagram/f8.jpg" alt="">
+                                    <img class="feed-img" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="">
                                 </a>
                             </li>
                         </ul>
@@ -1396,7 +1322,7 @@
                     <div class="footer-three-bottom">
                         <div class="footer-three-left">
                             <a href="#">
-                                <img src="assets/img/logo_5_dark.png" alt="">
+                                <img class="footer-logo" src="media/logo.png" alt="">
                             </a>
                             <p>There are many variations of passages of Lorem Ipsum available but the majority. We are
                                 proud there are many variations of passages of Lorem Ipsum available but the majority of
@@ -1437,6 +1363,10 @@
 
     <div class="backtotop">
         <i class="fa fa-angle-up backtotop_btn"></i>
+    </div>
+
+    <div id="demoTst">
+
     </div>
 
 

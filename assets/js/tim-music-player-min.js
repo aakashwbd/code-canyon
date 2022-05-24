@@ -144,7 +144,7 @@
           $self.bind('mbInitPlaylistAdvance', function(e) {
             var changeTo = this.getData('mbInitPlaylistAdvance');
 
-            if (changeTo != current) {
+            if (changeTo !== current) {
               current = changeTo;
               playlistAdvance(current);
             } else {

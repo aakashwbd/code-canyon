@@ -27,10 +27,13 @@
     <link rel="stylesheet" href="dependencies/css-loader/css/css-loader.css" type="text/css">
     <link rel="stylesheet" href="dependencies/aos-master/dist/aos.css" type="text/css">
 
+
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="assets/css/woocommerce.css" type="text/css">
     <link rel="stylesheet" href="assets/css/app.css" type="text/css">
     <link id="theme" rel="stylesheet" href="assets/css/theme-color/theme-default.css" type="text/css">
+
+<!--    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">-->
 </head>
 
 <body id="home-version-1" class="home-version-1" data-style="default">
@@ -84,11 +87,11 @@
                     </div>
 
                     <ul class="user-login">
-                        <li>
-                            <a href="#" class="off-opener">
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                            </a>
-                        </li>
+<!--                        <li>-->
+<!--                            <a href="#" class="off-opener">-->
+<!--                                <i class="fa fa-bars" aria-hidden="true"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
                         <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>
                         </a></li>
 
@@ -156,18 +159,28 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="javascript:void(0)" class="search-trigger">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <div class="search-input-wrapper">
-                                <input class="search-input" placeholder="Search" type="text">
-                            </div>
-                        </li>
+<!--                        <li>-->
+<!--                            <a href="javascript:void(0)" class="search-trigger">-->
+<!--                                <i class="fa fa-search" aria-hidden="true"></i>-->
+<!--                            </a>-->
+<!--                            <div class="search-input-wrapper">-->
+<!--                                <input class="search-input" placeholder="Search" type="text">-->
+<!--                            </div>-->
+<!--                        </li>-->
                     </ul>
 
                     <div class="nav">
-                        <ul class="group" id="header-menu-magic-line">
+                        <ul class="group align-items-center" id="header-menu-magic-line">
+                            <li class="menu-item-has-children">
+                                <form action="" class="nav-search-form">
+                                    <input type="search" placeholder="Search...">
+                                    <button>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+
+                            </li>
+
                             <li class="menu-item-has-children current_page_item">
                                 <a href="index.html">Home </a>
                                 <ul class="sub-menu">
@@ -414,6 +427,8 @@
         </div>
 
     </section>
+
+
     <!-- /#page-header -->
 
     <!--    <section>-->
@@ -506,11 +521,14 @@
     <!--==============================-->
     <section class="section-padding-two artist-lineup">
         <div class="tim-container clearfix">
-            <div class="">
-                <div class="section-title style-four m-0">
-                    <h2>ARTIST LINEUP</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered
-                        alteration in some injected humour.</p>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <div class="section-title style-four m-0">
+                        <h2>ARTIST LINEUP</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered
+                            alteration in some injected humour.</p>
+                    </div>
                 </div>
             </div>
 
@@ -668,6 +686,32 @@
                                 </div>
                             </div>
                             <div class="col-xl-12">
+
+<!--                                <div class="latest-table">-->
+<!--                                    <img class="latest-tablet-img" src="media/tablet.png" alt="">-->
+<!--                                    <div class="latest-table-content">-->
+
+<!--                                        <div class="equalizer">-->
+<!--                                            <span class="column" id="purple"></span>-->
+<!--                                            <span class="column" id="blue"></span>-->
+<!--                                            <span class="column" id="cyan"></span>-->
+<!--                                            <span class="column" id="green"></span>-->
+<!--                                            <span class="column" id="yellow"></span>-->
+<!--                                            <span class="column" id="orange"></span>-->
+<!--                                            <span class="column" id="red"></span>-->
+<!--                                            <span id="black"></span>-->
+<!--                                            <br/>-->
+<!--                                            <input type="button" onclick="JavaScript: play();" value="Play" id=button>-->
+<!--                                        </div>-->
+<!--                                        -->
+<!--                                        <audio controls loop id="demo">-->
+<!--                                            <source src="media/audio/01.mp3" type="audio/ogg">-->
+<!--                                        </audio>-->
+<!--                                        <div class="demo equalizer"></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+
                                 <div class="record-player">
                                     <div class="player-main">
                                         <img src="media/background/record.png" alt="">
@@ -823,14 +867,21 @@
     <!--=        	Latest album         =-->
     <!--==============================-->
     <section class="latest-album">
-        <div class="section-title style-four">
-            <h2>TRENDING ALBUMS</h2>
-            <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration
-                in some injected humour.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <div class="section-title style-four">
+                        <h2>TRENDING ALBUMS</h2>
+<!--                        <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered-->
+<!--                            alteration-->
+<!--                            in some injected humour.</p>-->
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="more-album">
-            <a href="#">SEE ALL ALBUMS<i class="fa fa-play" aria-hidden="true"></i></a>
-        </div>
+
 
         <div class="gallery">
             <ul class="honeycomb" lang="es">
@@ -891,7 +942,7 @@
     <!--==============================-->
     <!--=        	Show schedule        =-->
     <!--==============================-->
-    <section class="show-archive">
+    <section class="show-archive" style="margin-top: 200px">
         <div class="container">
             <div class="d-flex justify-content-center row">
                 <div class="col-xl-10">
@@ -958,9 +1009,15 @@
         <div class="container">
             <div class="d-flex justify-content-center row">
                 <div class="col-xl-10">
-                    <div class="section-title style-four">
-                        <h2>UPCOMING SHOWS</h2>
+                    <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4">
+                            <div class="section-title style-four">
+                                <h2>UPCOMING SHOWS</h2>
+                            </div>
+                        </div>
                     </div>
+
 
                     <div data-aos="zoom-in-up" class="ticket">
                         <div class="left">
@@ -1084,8 +1141,40 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-4">
-                            <div class="spotlight-inner" data-aos="fade-right">
-                                <img src="media/performance/vid-1.jpg" alt="">
+                            <div class="spotlight-inner rounded-15" data-aos="fade-right">
+                                <img src="media/performance/vid-1.jpg" class="rounded-15" alt="">
+                                <div class="video-player-three">
+                                    <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4"
+                                       class="video-btn-four popup-video-btn">
+                                        <i class="fa fa-play"></i>
+                                    </a>
+                                    <div class="text">
+                                        <p>Show Stoppers Time</p>
+                                        <span>(Live in Tokyo, 2017)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6  mb-4">
+                            <div class="spotlight-inner rounded-15" data-aos="fade-right">
+                                <img src="media/performance/vid-1.jpg" class="rounded-15" alt="">
+                                <div class="video-player-three">
+                                    <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4"
+                                       class="video-btn-four popup-video-btn">
+                                        <i class="fa fa-play"></i>
+                                    </a>
+                                    <div class="text">
+                                        <p>Show Stoppers Time</p>
+                                        <span>(Live in Tokyo, 2017)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6  mb-4">
+                            <div class="spotlight-inner rounded-15" data-aos="fade-right">
+                                <img src="media/performance/vid-1.jpg" class="rounded-15" alt="">
                                 <div class="video-player-three">
                                     <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4"
                                        class="video-btn-four popup-video-btn">
@@ -1101,39 +1190,7 @@
 
                         <div class="col-md-6  mb-4">
                             <div class="spotlight-inner" data-aos="fade-right">
-                                <img src="media/performance/vid-1.jpg" alt="">
-                                <div class="video-player-three">
-                                    <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4"
-                                       class="video-btn-four popup-video-btn">
-                                        <i class="fa fa-play"></i>
-                                    </a>
-                                    <div class="text">
-                                        <p>Show Stoppers Time</p>
-                                        <span>(Live in Tokyo, 2017)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6  mb-4">
-                            <div class="spotlight-inner" data-aos="fade-right">
-                                <img src="media/performance/vid-1.jpg" alt="">
-                                <div class="video-player-three">
-                                    <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4"
-                                       class="video-btn-four popup-video-btn">
-                                        <i class="fa fa-play"></i>
-                                    </a>
-                                    <div class="text">
-                                        <p>Show Stoppers Time</p>
-                                        <span>(Live in Tokyo, 2017)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6  mb-4">
-                            <div class="spotlight-inner" data-aos="fade-right">
-                                <img src="media/performance/vid-1.jpg" alt="">
+                                <img src="media/performance/vid-1.jpg" class="rounded-15" alt="">
                                 <div class="video-player-three">
                                     <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4"
                                        class="video-btn-four popup-video-btn">
@@ -1171,7 +1228,7 @@
                             <div class="section-title style-six">
                                 <h2>BRAND SHOP</h2>
                             </div>
-                            <div class="brand-shop-carousel">
+                            <div class="brand-shop-carousel  rounded-15" style="overflow: hidden" >
                                 <div class="swiper-container row"
                                      data-swiper-config='{ "loop": true, "paginationClickable" :true, "autoplay": 5000, "pagination": "store-pagination", "speed": 700, "effect": "slide", "slidesPerView": 1, "spaceBetween": 0, "grabCursor": true,"breakpoints": { "1300": { "slidesPerView": 1 }, "767": { "slidesPerView": 1 }, "500": { "slidesPerView": 1 }}}'>
                                     <ul class="product-five swiper-wrapper">
@@ -1202,8 +1259,7 @@
                             <div class="section-title style-six">
                                 <h2>STORIES</h2>
                             </div>
-                            <div class="soundcloud-wrapper">
-
+                            <div class="soundcloud-wrapper rounded-15" style="overflow: hidden">
                                 <iframe allow="autoplay"
                                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/473962047&color=%23d6d6d6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                                 <h6>I am a blog post with an embeded soundcloud player. You can share a musician’s story
@@ -1226,6 +1282,92 @@
     </section>
     <!-- /#about -->
 
+    <!--======================================-->
+    <!--=        	Partners        	         =-->
+    <!--======================================-->
+    <section class="partners-area ">
+        <div class="container">
+            <div class="d-flex justify-content-center row">
+                <div class="col-xl-10">
+
+                    <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4">
+                            <div class="section-title style-five float-left mb-0">
+                                <h2>OUR SPONSORS</h2>
+                                <p>There are many variations of passages of Lorem Ipsum available but the majority. We are proud there are many variations of passages of Lorem Ipsum available.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="partner-swipper swiper-container row" data-swiper-config='{ "loop": true, "prevButton":".swiper-button-prev", "nextButton": ".swiper-button-next", "speed": 700, "autoplay": 3000, "slidesPerView": 5, "spaceBetween": 0, "grabCursor": true,"breakpoints": { "991": { "slidesPerView": 2 }, "767": { "slidesPerView": 3 }, "500": { "slidesPerView": 2 }}}'>
+                                <ul class="artist-line-wrapper swiper-wrapper">
+
+                                    <li class="clearfix swiper-slide" data-aos="fade-right" data-aos-duration="100">
+                                        <a href="#"><img src="media/logo/21.png" alt=""></a>
+
+                                    </li>
+
+                                    <li class="clearfix swiper-slide" data-aos="fade-right" data-aos-duration="300">
+                                        <a href="#"><img src="media/logo/22.png" alt=""></a>
+
+                                    </li>
+
+                                    <li class=" clearfix swiper-slide" data-aos="fade-right" data-aos-duration="500">
+                                        <a href="#"><img src="media/logo/23.png" alt=""></a>
+
+                                    </li>
+
+                                    <li class="clearfix swiper-slide" data-aos="fade-right" data-aos-duration="700">
+                                        <a href="#"><img src="media/logo/24.png" alt=""></a>
+
+                                    </li>
+                                    <li class="clearfix swiper-slide" data-aos="fade-right" data-aos-duration="900">
+                                        <a href="#"><img src="media/logo/21.png" alt=""></a>
+
+                                    </li>
+
+                                    <li class="clearfix swiper-slide" data-aos="fade-right" data-aos-duration="1100">
+                                        <a href="#"><img src="media/logo/22.png" alt=""></a>
+
+                                    </li>
+
+                                    <li class=" clearfix swiper-slide" data-aos="fade-right" data-aos-duration="1300">
+                                        <a href="#"><img src="media/logo/23.png" alt=""></a>
+
+                                    </li>
+
+                                    <li class="clearfix swiper-slide" data-aos="fade-right" data-aos-duration="1500">
+                                        <a href="#"><img src="media/logo/24.png" alt=""></a>
+
+                                    </li>
+                                </ul>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+
+                        </div>
+                        <!-- /.col-xl-4 -->
+
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.col-xl- -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#about -->
+
+
+
+
+
+
+
+
+
 
     <!--==============================-->
     <!--=        	Footer         	 =-->
@@ -1233,84 +1375,6 @@
 
     <footer id="footer-3">
         <div class="container">
-
-            <div class="footer-partner my-3">
-                <div class="row">
-                    <div class="col-md-8"></div>
-                    <div class="col-md-4">
-                        <div class="partner-heading">
-                            <h2>OUR SPONSORS</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available but the majority. We
-                                are proud there are many variations of passages of Lorem Ipsum available.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="d-flex align-text-center justify-content-around">
-                            <li data-aos="fade-right" data-aos-duration="100">
-                                <a href="#">
-                                    <img class="feed-img"
-                                         src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
-                                         alt="">
-                                </a>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="300">
-                                <a href="#">
-                                    <img class="feed-img"
-                                         src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
-                                         alt="">
-                                </a>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="500">
-                                <a href="#">
-                                    <img class="feed-img"
-                                         src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
-                                         alt="">
-                                </a>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="700">
-                                <a href="#">
-                                    <img class="feed-img"
-                                         src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
-                                         alt="">
-                                </a>
-                            </li>
-
-                            <li data-aos="fade-right" data-aos-duration="900">
-                                <a href="#">
-                                    <img class="feed-img"
-                                         src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
-                                         alt="">
-                                </a>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="1100">
-                                <a href="#">
-                                    <img class="feed-img"
-                                         src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
-                                         alt="">
-                                </a>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="1300">
-                                <a href="#">
-                                    <img class="feed-img"
-                                         src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
-                                         alt="">
-                                </a>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="1500">
-                                <a href="#">
-                                    <img class="feed-img"
-                                         src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
-                                         alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            </div>
-
-
             <div class="footer-top">
                 <div class="row">
                     <div class="col-md-4 col-lg-4 col-sm-6 col-12">
@@ -1343,12 +1407,18 @@
 
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-6 col-12">
-                        <h6 class="footer-heading">Subscriber</h6>
+                        <div class="">
+                            <h6 class="footer-heading">Subscriber</h6>
+                            <span class="subscribe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, eveniet.</span>
+                        </div>
+                        <div class="mt-1">
+                            <form class="subscribe-form">
+                                <input type="text" placeholder="example@example.com">
+                                <button>subscribe</button>
+                            </form>
+                        </div>
 
-                        <form class="subscribe-form">
-                            <input type="text" placeholder="example@example.com">
-                            <button>subscribe</button>
-                        </form>
+
 
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-6 col-12 text-right">
@@ -1402,9 +1472,7 @@
         <i class="fa fa-angle-up backtotop_btn"></i>
     </div>
 
-    <div id="demoTst">
 
-    </div>
 
 
 </div>
@@ -1435,9 +1503,14 @@
 <script src='assets/js/parallax.min.js'></script>
 <script src='dependencies/aos-master/dist/aos.js'></script>
 
+<script src='/dependencies/Create-Audio-Equalizer-Animations-Using-jQuery-Equalizer/js/jquery.equalizer.js'></script>
+<script src='dependencies/Create-Audio-Equalizer-Animations-Using-jQuery-Equalizer/js/jquery.reverseorder.js'></script>
+
+
+
 <script src="assets/js/custom.js"></script>
 
-
+<!--<script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>-->
 <!-- Player -->
 <script src="dependencies/jPlayer/js/jquery.jplayer.min.js"></script>
 <script src="dependencies/jPlayer/js/jplayer.playlist.min.js"></script>

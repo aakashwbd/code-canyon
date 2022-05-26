@@ -1,3 +1,28 @@
+const pageLoadHandler = () => {
+
+    window.addEventListener('load', ()=>{
+        fireworks.start();
+
+        $('#preloader').removeClass('d-none')
+
+        setTimeout(function() {
+            $('#preloader').addClass('d-none')
+        }, 3000);
+
+
+    })
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            document.querySelector('header').classList.add('sticky-navbar');
+        } else {
+            document.querySelector('header').classList.remove('sticky-navbar');
+        }
+    });
+}
+pageLoadHandler()
+
+
+AOS.init();
 
 /**
  * Constant variables
@@ -54,29 +79,91 @@ const fireworks = new Fireworks(container, {
 });
 
 
-const pageLoadHandler = () => {
-    window.addEventListener('load', ()=>{
-        fireworks.start();
 
-        $('#preloader').removeClass('d-none')
+//
+// $('#demo').equalizer({
+//
+//     // height / width
+//     width: 400,
+//     height: 150,
+//
+//     // colors
+//     color: "#0f1957",
+//     color1: "#a94442",
+//     color2: "#f2b400",
+//
+//     // the number of bars
+//     bars: 15,
+//
+//     // margin between bars
+//     barMargin: 0.5,
+//
+//     // the number of components in one bar
+//     components: 10,
+//
+//     // margin between components
+//     componentMargin: 0.5,
+//
+//     // rate of equalizer frequency
+//     frequency: 10,
+//
+//     // refresh time of animation
+//     refreshTime: 100
+//
+// });
 
-        setTimeout(function() {
-            $('#preloader').addClass('d-none')
-        }, 3000);
-
-
-    })
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            document.querySelector('header').classList.add('sticky-navbar');
-        } else {
-            document.querySelector('header').classList.remove('sticky-navbar');
-        }
-    });
-}
-pageLoadHandler()
-
-
-AOS.init();
-
-
+// //A function to return a random number between a min and a max value
+// function randomNumber(min, max) {
+//     number =  Math.floor((Math.random()*(max-min))+ min);
+//     return number;
+// }
+//
+// //Initialise starting values
+// var purple, blue, cyan, green, yellow, orange, red;
+// purple = 160;
+// blue = 140;
+// cyan = 100;
+// green = 140;
+// yellow = 180;
+// orange = 70;
+// red = 200;
+//
+// //To start with the equalizer is paused
+// var playing=false;
+//
+// // A Function to change the height of a column more or less randomly
+// function changeHeight(column, height) {
+//     height-=randomNumber(-20,20);
+//     if (height>200) height=200;
+//     if (height<5) height=5;
+//     column.style.height=height + "px";
+//     return height;
+// }
+//
+//
+// //A Function that will be run every 50ms to animate the equalizer
+// function animate() {
+//     if (playing) {
+//         purple = changeHeight(document.getElementById("purple"),purple);     blue = changeHeight(document.getElementById("blue"),blue);
+//         cyan = changeHeight(document.getElementById("cyan"),cyan);
+//         green = changeHeight(document.getElementById("green"),green);
+//         yellow = changeHeight(document.getElementById("yellow"),yellow);
+//         orange = changeHeight(document.getElementById("orange"),orange);
+//         red = changeHeight(document.getElementById("red"),red);
+//
+//         //Repeat this function every 50 ms
+//         setTimeout(animate, 50);
+//     }
+// }
+//
+// //A Function to play or pause the animation
+// function play() {
+//     if (playing) {
+//         playing=false;
+//         document.getElementById("button").value="Play";
+//     } else {
+//         playing=true;
+//         document.getElementById("button").value="Pause";
+//         animate();
+//     }
+// }
